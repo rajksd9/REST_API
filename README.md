@@ -3,7 +3,7 @@
 Follow these steps to get the application up and running:
 
 1. **Download or Clone the Repository**
-   - Clone the repository using `git clone <repository-url>` or download the zip file and extract it.
+   - Clone the repository using `git clone [https://github.com/rajksd9/REST_API](https://github.com/rajksd9/REST_API)` or download the zip file and extract it.
 
 2. **Install Required Packages**
    - Navigate to the project directory and install the necessary packages:
