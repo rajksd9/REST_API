@@ -1,0 +1,420 @@
+2024-08-28 17:08:12,084 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-28 17:08:12,084 [33mPress CTRL+C to quit[0m
+2024-08-28 17:08:16,814 Incoming request to /customer
+2024-08-28 17:08:16,920 Completed request to /customer with status 200 OK
+2024-08-28 17:08:16,920 127.0.0.1 - - [28/Aug/2024 17:08:16] "[35m[1mGET /customer?customer_id=ANTON HTTP/1.1[0m" 500 -
+2024-08-28 17:08:16,960 Error on request:
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Learning\Python\flask-db\flask_venv\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "C:\Users\user\Desktop\Learning\Python\flask-db\flask_venv\Lib\site-packages\werkzeug\serving.py", line 331, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Learning\Python\flask-db\flask_venv\Lib\site-packages\flask\app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Learning\Python\flask-db\flask_venv\Lib\site-packages\flask\app.py", line 1480, in wsgi_app
+    return response(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not callable
+2024-08-28 17:10:43,584 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-28 17:10:43,584 [33mPress CTRL+C to quit[0m
+2024-08-28 17:10:49,721 127.0.0.1 - - [28/Aug/2024 17:10:49] "GET /customer?customer_id=ANTON HTTP/1.1" 200 -
+2024-08-28 17:11:17,474 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-28 17:11:17,474 [33mPress CTRL+C to quit[0m
+2024-08-28 17:11:20,569 Incoming request to /customer
+2024-08-28 17:11:20,657 Completed request to /customer with status 200 OK
+2024-08-28 17:11:20,660 127.0.0.1 - - [28/Aug/2024 17:11:20] "GET /customer?customer_id=ANTON HTTP/1.1" 200 -
+2024-08-28 17:11:37,251 Incoming request to /customer
+2024-08-28 17:11:37,270 Completed request to /customer with status 200 OK
+2024-08-28 17:11:37,271 127.0.0.1 - - [28/Aug/2024 17:11:37] "GET /customer HTTP/1.1" 200 -
+2024-08-28 17:11:45,160 Incoming request to /customer
+2024-08-28 17:11:45,160 Completed request to /customer with status 200 OK
+2024-08-28 17:11:45,170 127.0.0.1 - - [28/Aug/2024 17:11:45] "GET /customer?customer_id=ANTON HTTP/1.1" 200 -
+2024-08-28 17:50:55,567 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-28 17:50:55,567 [33mPress CTRL+C to quit[0m
+2024-08-28 17:51:06,673 Incoming request to /customer
+2024-08-28 17:51:06,925 Completed request to /customer with status 200 OK
+2024-08-28 17:51:06,929 127.0.0.1 - - [28/Aug/2024 17:51:06] "GET /customer HTTP/1.1" 200 -
+2024-08-28 17:52:25,303 Incoming request to /customer
+2024-08-28 17:52:25,316 Completed request to /customer with status 200 OK
+2024-08-28 17:52:25,318 127.0.0.1 - - [28/Aug/2024 17:52:25] "GET /customer HTTP/1.1" 200 -
+2024-08-28 17:52:38,975 Incoming request to /customer
+2024-08-28 17:52:38,999 Completed request to /customer with status 200 OK
+2024-08-28 17:52:39,002 127.0.0.1 - - [28/Aug/2024 17:52:39] "GET /customer HTTP/1.1" 200 -
+2024-08-28 17:57:03,615 Incoming request to /customer
+2024-08-28 17:57:03,639 Completed request to /customer with status 200 OK
+2024-08-28 17:57:03,642 127.0.0.1 - - [28/Aug/2024 17:57:03] "GET /customer HTTP/1.1" 200 -
+2024-08-28 18:02:57,272 Incoming request to /customer
+2024-08-28 18:02:57,360 Completed request to /customer with status 200 OK
+2024-08-28 18:02:57,367 127.0.0.1 - - [28/Aug/2024 18:02:57] "GET /customer HTTP/1.1" 200 -
+2024-08-28 18:02:58,926 Incoming request to /customer
+2024-08-28 18:02:58,940 Completed request to /customer with status 200 OK
+2024-08-28 18:02:58,943 127.0.0.1 - - [28/Aug/2024 18:02:58] "GET /customer HTTP/1.1" 200 -
+2024-08-28 18:02:59,510 Incoming request to /customer
+2024-08-28 18:02:59,523 Completed request to /customer with status 200 OK
+2024-08-28 18:02:59,525 127.0.0.1 - - [28/Aug/2024 18:02:59] "GET /customer HTTP/1.1" 200 -
+2024-08-28 18:02:59,609 Incoming request to /customer
+2024-08-28 18:02:59,622 Completed request to /customer with status 200 OK
+2024-08-28 18:02:59,625 127.0.0.1 - - [28/Aug/2024 18:02:59] "GET /customer HTTP/1.1" 200 -
+2024-08-28 18:02:59,825 Incoming request to /customer
+2024-08-28 18:02:59,834 Completed request to /customer with status 200 OK
+2024-08-28 18:02:59,837 127.0.0.1 - - [28/Aug/2024 18:02:59] "GET /customer HTTP/1.1" 200 -
+2024-08-28 18:06:35,780 Incoming request to /customer
+2024-08-28 18:06:35,851 Completed request to /customer with status 200 OK
+2024-08-28 18:06:35,855 127.0.0.1 - - [28/Aug/2024 18:06:35] "GET /customer HTTP/1.1" 200 -
+2024-08-28 18:08:03,424 Incoming request to /customer
+2024-08-28 18:08:03,435 Completed request to /customer with status 200 OK
+2024-08-28 18:08:03,437 127.0.0.1 - - [28/Aug/2024 18:08:03] "GET /customer HTTP/1.1" 200 -
+2024-08-28 18:08:23,963 Incoming request to /customer
+2024-08-28 18:08:24,090 Completed request to /customer with status 200 OK
+2024-08-28 18:08:24,092 127.0.0.1 - - [28/Aug/2024 18:08:24] "GET /customer?customer_id=KOENE HTTP/1.1" 200 -
+2024-08-28 18:10:18,096 Incoming request to /orders
+2024-08-28 18:10:18,264 Completed request to /orders with status 200 OK
+2024-08-28 18:10:18,267 127.0.0.1 - - [28/Aug/2024 18:10:18] "GET /orders HTTP/1.1" 200 -
+2024-08-28 18:11:49,169 Incoming request to /orders/createOrder
+2024-08-28 18:11:49,397 Completed request to /orders/createOrder with status 201 CREATED
+2024-08-28 18:11:49,402 127.0.0.1 - - [28/Aug/2024 18:11:49] "[35m[1mPOST /orders/createOrder HTTP/1.1[0m" 201 -
+2024-08-28 18:12:05,872 Incoming request to /orders/updateOrder
+2024-08-28 18:12:05,963 Completed request to /orders/updateOrder with status 500 INTERNAL SERVER ERROR
+2024-08-28 18:12:05,964 127.0.0.1 - - [28/Aug/2024 18:12:05] "[35m[1mPUT /orders/updateOrder?order_id=1 HTTP/1.1[0m" 500 -
+2024-08-28 18:12:44,912 Incoming request to /orders/updateOrder
+2024-08-28 18:12:44,935 Completed request to /orders/updateOrder with status 202 ACCEPTED
+2024-08-28 18:12:44,937 127.0.0.1 - - [28/Aug/2024 18:12:44] "[35m[1mPUT /orders/updateOrder?order_id=1 HTTP/1.1[0m" 202 -
+2024-08-28 18:13:09,333 Incoming request to /customer
+2024-08-28 18:13:09,337 Completed request to /customer with status 200 OK
+2024-08-28 18:13:09,339 127.0.0.1 - - [28/Aug/2024 18:13:09] "GET /customer?customer_id=ANTON HTTP/1.1" 200 -
+2024-08-28 18:13:25,836 Incoming request to /customer
+2024-08-28 18:13:25,839 Completed request to /customer with status 200 OK
+2024-08-28 18:13:25,842 127.0.0.1 - - [28/Aug/2024 18:13:25] "GET /customer?customer_id=ALFKI HTTP/1.1" 200 -
+2024-08-29 01:57:30,805 Incoming request to /customer
+2024-08-29 01:57:31,015 Completed request to /customer with status 200 OK
+2024-08-29 01:57:31,023 127.0.0.1 - - [29/Aug/2024 01:57:31] "GET /customer HTTP/1.1" 200 -
+2024-08-29 10:47:28,243 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 10:47:28,243 [33mPress CTRL+C to quit[0m
+2024-08-29 10:47:33,673 Incoming request to /customer
+2024-08-29 10:47:34,097 Completed request to /customer with status 200 OK
+2024-08-29 10:47:34,097 127.0.0.1 - - [29/Aug/2024 10:47:34] "GET /customer HTTP/1.1" 200 -
+2024-08-29 11:39:55,385 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 11:39:55,386 [33mPress CTRL+C to quit[0m
+2024-08-29 11:40:02,266 Incoming request to /
+2024-08-29 11:40:02,266 Completed request to / with status 200 OK
+2024-08-29 11:40:02,266 127.0.0.1 - - [29/Aug/2024 11:40:02] "GET / HTTP/1.1" 200 -
+2024-08-29 11:40:03,715 Incoming request to /swagger
+2024-08-29 11:40:03,716 Completed request to /swagger with status 308 PERMANENT REDIRECT
+2024-08-29 11:40:03,716 127.0.0.1 - - [29/Aug/2024 11:40:03] "[32mGET /swagger HTTP/1.1[0m" 308 -
+2024-08-29 11:40:04,027 Incoming request to /swagger/
+2024-08-29 11:40:04,168 Completed request to /swagger/ with status 200 OK
+2024-08-29 11:40:04,168 127.0.0.1 - - [29/Aug/2024 11:40:04] "GET /swagger/ HTTP/1.1" 200 -
+2024-08-29 11:40:04,544 Incoming request to /swagger/index.css
+2024-08-29 11:40:04,559 Incoming request to /swagger/swagger-ui.css
+2024-08-29 11:40:04,559 Incoming request to /swagger/swagger-ui-bundle.js
+2024-08-29 11:40:04,559 Incoming request to /swagger/swagger-ui-standalone-preset.js
+2024-08-29 11:40:04,876 Completed request to /swagger/index.css with status 200 OK
+2024-08-29 11:40:04,876 127.0.0.1 - - [29/Aug/2024 11:40:04] "GET /swagger/index.css HTTP/1.1" 200 -
+2024-08-29 11:40:04,892 Completed request to /swagger/swagger-ui.css with status 200 OK
+2024-08-29 11:40:04,892 127.0.0.1 - - [29/Aug/2024 11:40:04] "GET /swagger/swagger-ui.css HTTP/1.1" 200 -
+2024-08-29 11:40:04,955 Completed request to /swagger/swagger-ui-bundle.js with status 200 OK
+2024-08-29 11:40:04,955 127.0.0.1 - - [29/Aug/2024 11:40:04] "GET /swagger/swagger-ui-bundle.js HTTP/1.1" 200 -
+2024-08-29 11:40:05,041 Completed request to /swagger/swagger-ui-standalone-preset.js with status 200 OK
+2024-08-29 11:40:05,042 127.0.0.1 - - [29/Aug/2024 11:40:05] "GET /swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+2024-08-29 11:40:05,151 Incoming request to /static/swagger.json
+2024-08-29 11:40:05,160 Completed request to /static/swagger.json with status 200 OK
+2024-08-29 11:40:05,160 127.0.0.1 - - [29/Aug/2024 11:40:05] "GET /static/swagger.json HTTP/1.1" 200 -
+2024-08-29 11:40:05,510 Incoming request to /swagger/favicon-32x32.png
+2024-08-29 11:40:05,525 Completed request to /swagger/favicon-32x32.png with status 200 OK
+2024-08-29 11:40:05,525 127.0.0.1 - - [29/Aug/2024 11:40:05] "GET /swagger/favicon-32x32.png HTTP/1.1" 200 -
+2024-08-29 11:40:38,678 Incoming request to /
+2024-08-29 11:40:38,678 Completed request to / with status 200 OK
+2024-08-29 11:40:38,678 127.0.0.1 - - [29/Aug/2024 11:40:38] "GET / HTTP/1.1" 200 -
+2024-08-29 11:47:55,076 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 11:47:55,076 [33mPress CTRL+C to quit[0m
+2024-08-29 11:47:59,867 Incoming request to /swagger/
+2024-08-29 11:47:59,880 Completed request to /swagger/ with status 200 OK
+2024-08-29 11:47:59,882 127.0.0.1 - - [29/Aug/2024 11:47:59] "GET /swagger/ HTTP/1.1" 200 -
+2024-08-29 11:47:59,911 Incoming request to /swagger/index.css
+2024-08-29 11:47:59,976 Completed request to /swagger/index.css with status 304 NOT MODIFIED
+2024-08-29 11:47:59,976 127.0.0.1 - - [29/Aug/2024 11:47:59] "[36mGET /swagger/index.css HTTP/1.1[0m" 304 -
+2024-08-29 11:48:00,131 Incoming request to /swagger/swagger-ui.css
+2024-08-29 11:48:00,133 Completed request to /swagger/swagger-ui.css with status 304 NOT MODIFIED
+2024-08-29 11:48:00,133 127.0.0.1 - - [29/Aug/2024 11:48:00] "[36mGET /swagger/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-08-29 11:48:00,228 Incoming request to /swagger/swagger-ui-bundle.js
+2024-08-29 11:48:00,229 Incoming request to /swagger/swagger-ui-standalone-preset.js
+2024-08-29 11:48:00,231 Completed request to /swagger/swagger-ui-bundle.js with status 304 NOT MODIFIED
+2024-08-29 11:48:00,232 127.0.0.1 - - [29/Aug/2024 11:48:00] "[36mGET /swagger/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-08-29 11:48:00,233 Completed request to /swagger/swagger-ui-standalone-preset.js with status 304 NOT MODIFIED
+2024-08-29 11:48:00,234 127.0.0.1 - - [29/Aug/2024 11:48:00] "[36mGET /swagger/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-08-29 11:48:00,663 Incoming request to /static/swagger.json
+2024-08-29 11:48:00,663 Incoming request to /swagger/favicon-32x32.png
+2024-08-29 11:48:00,669 Completed request to /swagger/favicon-32x32.png with status 304 NOT MODIFIED
+2024-08-29 11:48:00,669 127.0.0.1 - - [29/Aug/2024 11:48:00] "[36mGET /swagger/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-08-29 11:48:00,679 Completed request to /static/swagger.json with status 200 OK
+2024-08-29 11:48:00,679 127.0.0.1 - - [29/Aug/2024 11:48:00] "GET /static/swagger.json HTTP/1.1" 200 -
+2024-08-29 11:48:14,887 Incoming request to /customer
+2024-08-29 11:48:15,135 Completed request to /customer with status 200 OK
+2024-08-29 11:48:15,136 127.0.0.1 - - [29/Aug/2024 11:48:15] "GET /customer HTTP/1.1" 200 -
+2024-08-29 11:49:24,440 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 11:49:24,441 [33mPress CTRL+C to quit[0m
+2024-08-29 11:49:27,788 Incoming request to /swagger/
+2024-08-29 11:49:27,790 Completed request to /swagger/ with status 200 OK
+2024-08-29 11:49:27,790 127.0.0.1 - - [29/Aug/2024 11:49:27] "GET /swagger/ HTTP/1.1" 200 -
+2024-08-29 11:49:27,827 Incoming request to /swagger/index.css
+2024-08-29 11:49:27,883 Completed request to /swagger/index.css with status 304 NOT MODIFIED
+2024-08-29 11:49:27,883 127.0.0.1 - - [29/Aug/2024 11:49:27] "[36mGET /swagger/index.css HTTP/1.1[0m" 304 -
+2024-08-29 11:49:28,055 Incoming request to /swagger/swagger-ui.css
+2024-08-29 11:49:28,058 Completed request to /swagger/swagger-ui.css with status 304 NOT MODIFIED
+2024-08-29 11:49:28,059 127.0.0.1 - - [29/Aug/2024 11:49:28] "[36mGET /swagger/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-08-29 11:49:28,138 Incoming request to /swagger/swagger-ui-bundle.js
+2024-08-29 11:49:28,141 Incoming request to /swagger/swagger-ui-standalone-preset.js
+2024-08-29 11:49:28,142 Completed request to /swagger/swagger-ui-bundle.js with status 304 NOT MODIFIED
+2024-08-29 11:49:28,143 127.0.0.1 - - [29/Aug/2024 11:49:28] "[36mGET /swagger/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-08-29 11:49:28,145 Completed request to /swagger/swagger-ui-standalone-preset.js with status 304 NOT MODIFIED
+2024-08-29 11:49:28,145 127.0.0.1 - - [29/Aug/2024 11:49:28] "[36mGET /swagger/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-08-29 11:49:28,537 Incoming request to /static/swagger.json
+2024-08-29 11:49:28,537 Completed request to /static/swagger.json with status 200 OK
+2024-08-29 11:49:28,537 127.0.0.1 - - [29/Aug/2024 11:49:28] "GET /static/swagger.json HTTP/1.1" 200 -
+2024-08-29 11:49:28,537 Incoming request to /swagger/favicon-32x32.png
+2024-08-29 11:49:28,537 Completed request to /swagger/favicon-32x32.png with status 304 NOT MODIFIED
+2024-08-29 11:49:28,537 127.0.0.1 - - [29/Aug/2024 11:49:28] "[36mGET /swagger/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-08-29 11:49:43,443 Incoming request to /customer
+2024-08-29 11:49:43,635 Completed request to /customer with status 200 OK
+2024-08-29 11:49:43,635 127.0.0.1 - - [29/Aug/2024 11:49:43] "GET /customer HTTP/1.1" 200 -
+2024-08-29 11:59:13,884 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 11:59:13,885 [33mPress CTRL+C to quit[0m
+2024-08-29 11:59:17,086 Incoming request to /swagger/
+2024-08-29 11:59:17,101 Completed request to /swagger/ with status 200 OK
+2024-08-29 11:59:17,101 127.0.0.1 - - [29/Aug/2024 11:59:17] "GET /swagger/ HTTP/1.1" 200 -
+2024-08-29 11:59:17,132 Incoming request to /swagger/index.css
+2024-08-29 11:59:17,190 Completed request to /swagger/index.css with status 304 NOT MODIFIED
+2024-08-29 11:59:17,190 127.0.0.1 - - [29/Aug/2024 11:59:17] "[36mGET /swagger/index.css HTTP/1.1[0m" 304 -
+2024-08-29 11:59:17,344 Incoming request to /swagger/swagger-ui.css
+2024-08-29 11:59:17,346 Completed request to /swagger/swagger-ui.css with status 304 NOT MODIFIED
+2024-08-29 11:59:17,346 127.0.0.1 - - [29/Aug/2024 11:59:17] "[36mGET /swagger/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-08-29 11:59:17,459 Incoming request to /swagger/swagger-ui-bundle.js
+2024-08-29 11:59:17,461 Incoming request to /swagger/swagger-ui-standalone-preset.js
+2024-08-29 11:59:17,463 Completed request to /swagger/swagger-ui-bundle.js with status 304 NOT MODIFIED
+2024-08-29 11:59:17,464 127.0.0.1 - - [29/Aug/2024 11:59:17] "[36mGET /swagger/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-08-29 11:59:17,465 Completed request to /swagger/swagger-ui-standalone-preset.js with status 304 NOT MODIFIED
+2024-08-29 11:59:17,466 127.0.0.1 - - [29/Aug/2024 11:59:17] "[36mGET /swagger/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-08-29 11:59:17,858 Incoming request to /static/swagger.json
+2024-08-29 11:59:17,874 Incoming request to /swagger/favicon-32x32.png
+2024-08-29 11:59:17,874 Completed request to /swagger/favicon-32x32.png with status 304 NOT MODIFIED
+2024-08-29 11:59:17,874 127.0.0.1 - - [29/Aug/2024 11:59:17] "[36mGET /swagger/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-08-29 11:59:17,892 Completed request to /static/swagger.json with status 200 OK
+2024-08-29 11:59:17,892 127.0.0.1 - - [29/Aug/2024 11:59:17] "GET /static/swagger.json HTTP/1.1" 200 -
+2024-08-29 11:59:34,622 Incoming request to /customer/createCustomer
+2024-08-29 11:59:34,763 Completed request to /customer/createCustomer with status 201 CREATED
+2024-08-29 11:59:34,763 127.0.0.1 - - [29/Aug/2024 11:59:34] "[35m[1mPOST /customer/createCustomer HTTP/1.1[0m" 201 -
+2024-08-29 12:03:49,005 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 12:03:49,006 [33mPress CTRL+C to quit[0m
+2024-08-29 12:04:01,189 Incoming request to /swagger/
+2024-08-29 12:04:01,205 Completed request to /swagger/ with status 200 OK
+2024-08-29 12:04:01,205 127.0.0.1 - - [29/Aug/2024 12:04:01] "GET /swagger/ HTTP/1.1" 200 -
+2024-08-29 12:04:01,237 Incoming request to /swagger/index.css
+2024-08-29 12:04:01,299 Completed request to /swagger/index.css with status 304 NOT MODIFIED
+2024-08-29 12:04:01,299 127.0.0.1 - - [29/Aug/2024 12:04:01] "[36mGET /swagger/index.css HTTP/1.1[0m" 304 -
+2024-08-29 12:04:01,457 Incoming request to /swagger/swagger-ui.css
+2024-08-29 12:04:01,457 Completed request to /swagger/swagger-ui.css with status 304 NOT MODIFIED
+2024-08-29 12:04:01,457 127.0.0.1 - - [29/Aug/2024 12:04:01] "[36mGET /swagger/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-08-29 12:04:01,566 Incoming request to /swagger/swagger-ui-bundle.js
+2024-08-29 12:04:01,568 Incoming request to /swagger/swagger-ui-standalone-preset.js
+2024-08-29 12:04:01,570 Completed request to /swagger/swagger-ui-bundle.js with status 304 NOT MODIFIED
+2024-08-29 12:04:01,570 127.0.0.1 - - [29/Aug/2024 12:04:01] "[36mGET /swagger/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-08-29 12:04:01,572 Completed request to /swagger/swagger-ui-standalone-preset.js with status 304 NOT MODIFIED
+2024-08-29 12:04:01,573 127.0.0.1 - - [29/Aug/2024 12:04:01] "[36mGET /swagger/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-08-29 12:04:02,032 Incoming request to /static/swagger.json
+2024-08-29 12:04:02,032 Incoming request to /swagger/favicon-32x32.png
+2024-08-29 12:04:02,032 Completed request to /swagger/favicon-32x32.png with status 304 NOT MODIFIED
+2024-08-29 12:04:02,032 127.0.0.1 - - [29/Aug/2024 12:04:02] "[36mGET /swagger/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-08-29 12:04:02,032 Completed request to /static/swagger.json with status 200 OK
+2024-08-29 12:04:02,032 127.0.0.1 - - [29/Aug/2024 12:04:02] "GET /static/swagger.json HTTP/1.1" 200 -
+2024-08-29 12:46:45,630 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 12:46:45,630 [33mPress CTRL+C to quit[0m
+2024-08-29 12:48:01,822 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 12:48:01,822 [33mPress CTRL+C to quit[0m
+2024-08-29 12:48:23,942 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 12:48:23,942 [33mPress CTRL+C to quit[0m
+2024-08-29 12:50:22,340 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 12:50:22,340 [33mPress CTRL+C to quit[0m
+2024-08-29 12:58:16,956 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 12:58:16,956 [33mPress CTRL+C to quit[0m
+2024-08-29 13:02:53,183 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 13:02:53,183 [33mPress CTRL+C to quit[0m
+2024-08-29 13:03:29,555 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 13:03:29,555 [33mPress CTRL+C to quit[0m
+2024-08-29 13:06:07,269 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 13:06:07,269 [33mPress CTRL+C to quit[0m
+2024-08-29 13:25:54,999 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 13:25:55,000 [33mPress CTRL+C to quit[0m
+2024-08-29 13:29:52,054 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 13:29:52,057 [33mPress CTRL+C to quit[0m
+2024-08-29 13:32:07,969 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 13:32:07,970 [33mPress CTRL+C to quit[0m
+2024-08-29 13:45:59,546 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 13:45:59,546 [33mPress CTRL+C to quit[0m
+2024-08-29 13:46:48,704 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 13:46:48,704 [33mPress CTRL+C to quit[0m
+2024-08-29 13:48:00,572 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 13:48:00,572 [33mPress CTRL+C to quit[0m
+2024-08-29 13:48:24,873 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 13:48:24,873 [33mPress CTRL+C to quit[0m
+2024-08-29 13:56:40,498 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 13:56:40,499 [33mPress CTRL+C to quit[0m
+2024-08-29 13:57:40,667 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 13:57:40,674 [33mPress CTRL+C to quit[0m
+2024-08-29 14:47:11,881 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 14:47:11,881 [33mPress CTRL+C to quit[0m
+2024-08-29 15:51:31,674 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-29 15:51:31,674 [33mPress CTRL+C to quit[0m
+2024-09-03 14:58:35,236 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-03 14:58:35,237 [33mPress CTRL+C to quit[0m
+2024-09-03 15:08:31,433 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-03 15:08:31,433 [33mPress CTRL+C to quit[0m
+2024-09-03 15:11:21,593 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-03 15:11:21,594 [33mPress CTRL+C to quit[0m
+2024-09-03 15:45:30,643 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-03 15:45:30,643 [33mPress CTRL+C to quit[0m
+2024-09-03 16:01:19,321 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-03 16:01:19,321 [33mPress CTRL+C to quit[0m
+2024-09-03 16:17:32,138 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-03 16:17:32,138 [33mPress CTRL+C to quit[0m
+2024-09-03 16:17:52,310 Incoming request to /customer
+2024-09-03 16:17:52,867 Completed request to /customer with status 200 OK
+2024-09-03 16:17:52,878 127.0.0.1 - - [03/Sep/2024 16:17:52] "GET /customer HTTP/1.1" 200 -
+2024-09-03 16:30:28,849 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-03 16:30:28,849 [33mPress CTRL+C to quit[0m
+2024-09-04 10:08:22,720 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-04 10:08:22,721 [33mPress CTRL+C to quit[0m
+2024-09-04 10:08:27,346 Incoming request to /
+2024-09-04 10:08:27,346 Completed request to / with status 200 OK
+2024-09-04 10:08:27,348 127.0.0.1 - - [04/Sep/2024 10:08:27] "GET / HTTP/1.1" 200 -
+2024-09-04 10:08:29,585 Incoming request to /swagger
+2024-09-04 10:08:29,585 Completed request to /swagger with status 308 PERMANENT REDIRECT
+2024-09-04 10:08:29,585 127.0.0.1 - - [04/Sep/2024 10:08:29] "[32mGET /swagger HTTP/1.1[0m" 308 -
+2024-09-04 10:08:29,894 Incoming request to /swagger/
+2024-09-04 10:08:30,020 Completed request to /swagger/ with status 200 OK
+2024-09-04 10:08:30,020 127.0.0.1 - - [04/Sep/2024 10:08:30] "GET /swagger/ HTTP/1.1" 200 -
+2024-09-04 10:08:30,420 Incoming request to /swagger/index.css
+2024-09-04 10:08:30,420 Incoming request to /swagger/swagger-ui.css
+2024-09-04 10:08:30,420 Incoming request to /swagger/swagger-ui-bundle.js
+2024-09-04 10:08:30,420 Incoming request to /swagger/swagger-ui-standalone-preset.js
+2024-09-04 10:08:30,640 Completed request to /swagger/index.css with status 200 OK
+2024-09-04 10:08:30,640 127.0.0.1 - - [04/Sep/2024 10:08:30] "GET /swagger/index.css HTTP/1.1" 200 -
+2024-09-04 10:08:30,640 Completed request to /swagger/swagger-ui.css with status 200 OK
+2024-09-04 10:08:30,640 127.0.0.1 - - [04/Sep/2024 10:08:30] "GET /swagger/swagger-ui.css HTTP/1.1" 200 -
+2024-09-04 10:08:30,695 Completed request to /swagger/swagger-ui-bundle.js with status 200 OK
+2024-09-04 10:08:30,696 127.0.0.1 - - [04/Sep/2024 10:08:30] "GET /swagger/swagger-ui-bundle.js HTTP/1.1" 200 -
+2024-09-04 10:08:30,814 Completed request to /swagger/swagger-ui-standalone-preset.js with status 200 OK
+2024-09-04 10:08:30,815 127.0.0.1 - - [04/Sep/2024 10:08:30] "GET /swagger/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+2024-09-04 10:08:30,906 Incoming request to /static/swagger.json
+2024-09-04 10:08:30,917 Completed request to /static/swagger.json with status 200 OK
+2024-09-04 10:08:30,917 127.0.0.1 - - [04/Sep/2024 10:08:30] "GET /static/swagger.json HTTP/1.1" 200 -
+2024-09-04 10:22:16,863 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-04 10:22:16,863 [33mPress CTRL+C to quit[0m
+2024-09-04 10:22:22,373 Incoming request to /swagger/
+2024-09-04 10:22:22,396 Completed request to /swagger/ with status 200 OK
+2024-09-04 10:22:22,397 127.0.0.1 - - [04/Sep/2024 10:22:22] "GET /swagger/ HTTP/1.1" 200 -
+2024-09-04 10:22:22,442 Incoming request to /swagger/index.css
+2024-09-04 10:22:22,514 Completed request to /swagger/index.css with status 304 NOT MODIFIED
+2024-09-04 10:22:22,514 127.0.0.1 - - [04/Sep/2024 10:22:22] "[36mGET /swagger/index.css HTTP/1.1[0m" 304 -
+2024-09-04 10:22:22,628 Incoming request to /swagger/swagger-ui.css
+2024-09-04 10:22:22,630 Completed request to /swagger/swagger-ui.css with status 304 NOT MODIFIED
+2024-09-04 10:22:22,631 127.0.0.1 - - [04/Sep/2024 10:22:22] "[36mGET /swagger/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-09-04 10:22:22,755 Incoming request to /swagger/swagger-ui-bundle.js
+2024-09-04 10:22:22,757 Completed request to /swagger/swagger-ui-bundle.js with status 304 NOT MODIFIED
+2024-09-04 10:22:22,757 127.0.0.1 - - [04/Sep/2024 10:22:22] "[36mGET /swagger/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-09-04 10:22:22,764 Incoming request to /swagger/swagger-ui-standalone-preset.js
+2024-09-04 10:22:22,768 Completed request to /swagger/swagger-ui-standalone-preset.js with status 304 NOT MODIFIED
+2024-09-04 10:22:22,769 127.0.0.1 - - [04/Sep/2024 10:22:22] "[36mGET /swagger/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-09-04 10:22:23,144 Incoming request to /static/swagger.json
+2024-09-04 10:22:23,160 Incoming request to /swagger/favicon-32x32.png
+2024-09-04 10:22:23,170 Completed request to /static/swagger.json with status 200 OK
+2024-09-04 10:22:23,171 127.0.0.1 - - [04/Sep/2024 10:22:23] "GET /static/swagger.json HTTP/1.1" 200 -
+2024-09-04 10:22:23,194 Completed request to /swagger/favicon-32x32.png with status 200 OK
+2024-09-04 10:22:23,194 127.0.0.1 - - [04/Sep/2024 10:22:23] "GET /swagger/favicon-32x32.png HTTP/1.1" 200 -
+2024-09-04 10:27:37,117 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-04 10:27:37,118 [33mPress CTRL+C to quit[0m
+2024-09-04 10:27:39,721 Incoming request to /swagger/
+2024-09-04 10:27:39,739 Completed request to /swagger/ with status 200 OK
+2024-09-04 10:27:39,739 127.0.0.1 - - [04/Sep/2024 10:27:39] "GET /swagger/ HTTP/1.1" 200 -
+2024-09-04 10:27:39,775 Incoming request to /swagger/index.css
+2024-09-04 10:27:39,838 Completed request to /swagger/index.css with status 304 NOT MODIFIED
+2024-09-04 10:27:39,839 127.0.0.1 - - [04/Sep/2024 10:27:39] "[36mGET /swagger/index.css HTTP/1.1[0m" 304 -
+2024-09-04 10:27:39,983 Incoming request to /swagger/swagger-ui.css
+2024-09-04 10:27:39,985 Completed request to /swagger/swagger-ui.css with status 304 NOT MODIFIED
+2024-09-04 10:27:39,985 127.0.0.1 - - [04/Sep/2024 10:27:39] "[36mGET /swagger/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-09-04 10:27:40,094 Incoming request to /swagger/swagger-ui-bundle.js
+2024-09-04 10:27:40,096 Completed request to /swagger/swagger-ui-bundle.js with status 304 NOT MODIFIED
+2024-09-04 10:27:40,097 127.0.0.1 - - [04/Sep/2024 10:27:40] "[36mGET /swagger/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-09-04 10:27:40,098 Incoming request to /swagger/swagger-ui-standalone-preset.js
+2024-09-04 10:27:40,101 Completed request to /swagger/swagger-ui-standalone-preset.js with status 304 NOT MODIFIED
+2024-09-04 10:27:40,102 127.0.0.1 - - [04/Sep/2024 10:27:40] "[36mGET /swagger/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-09-04 10:27:40,530 Incoming request to /static/swagger.json
+2024-09-04 10:27:40,531 Completed request to /static/swagger.json with status 304 NOT MODIFIED
+2024-09-04 10:27:40,532 127.0.0.1 - - [04/Sep/2024 10:27:40] "[36mGET /static/swagger.json HTTP/1.1[0m" 304 -
+2024-09-04 10:27:40,545 Incoming request to /swagger/favicon-32x32.png
+2024-09-04 10:27:40,545 Completed request to /swagger/favicon-32x32.png with status 304 NOT MODIFIED
+2024-09-04 10:27:40,546 127.0.0.1 - - [04/Sep/2024 10:27:40] "[36mGET /swagger/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-09-04 10:30:00,293 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-04 10:30:00,294 [33mPress CTRL+C to quit[0m
+2024-09-04 10:30:03,252 Incoming request to /swagger/
+2024-09-04 10:30:03,262 Completed request to /swagger/ with status 200 OK
+2024-09-04 10:30:03,263 127.0.0.1 - - [04/Sep/2024 10:30:03] "GET /swagger/ HTTP/1.1" 200 -
+2024-09-04 10:30:03,289 Incoming request to /swagger/index.css
+2024-09-04 10:30:03,354 Completed request to /swagger/index.css with status 304 NOT MODIFIED
+2024-09-04 10:30:03,355 127.0.0.1 - - [04/Sep/2024 10:30:03] "[36mGET /swagger/index.css HTTP/1.1[0m" 304 -
+2024-09-04 10:30:03,516 Incoming request to /swagger/swagger-ui.css
+2024-09-04 10:30:03,517 Completed request to /swagger/swagger-ui.css with status 304 NOT MODIFIED
+2024-09-04 10:30:03,517 127.0.0.1 - - [04/Sep/2024 10:30:03] "[36mGET /swagger/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-09-04 10:30:03,613 Incoming request to /swagger/swagger-ui-bundle.js
+2024-09-04 10:30:03,614 Incoming request to /swagger/swagger-ui-standalone-preset.js
+2024-09-04 10:30:03,614 Completed request to /swagger/swagger-ui-bundle.js with status 304 NOT MODIFIED
+2024-09-04 10:30:03,615 127.0.0.1 - - [04/Sep/2024 10:30:03] "[36mGET /swagger/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-09-04 10:30:03,615 Completed request to /swagger/swagger-ui-standalone-preset.js with status 304 NOT MODIFIED
+2024-09-04 10:30:03,616 127.0.0.1 - - [04/Sep/2024 10:30:03] "[36mGET /swagger/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-09-04 10:30:04,006 Incoming request to /static/swagger.json
+2024-09-04 10:30:04,018 Completed request to /static/swagger.json with status 200 OK
+2024-09-04 10:30:04,018 127.0.0.1 - - [04/Sep/2024 10:30:04] "GET /static/swagger.json HTTP/1.1" 200 -
+2024-09-04 10:30:04,021 Incoming request to /swagger/favicon-32x32.png
+2024-09-04 10:30:04,022 Completed request to /swagger/favicon-32x32.png with status 304 NOT MODIFIED
+2024-09-04 10:30:04,022 127.0.0.1 - - [04/Sep/2024 10:30:04] "[36mGET /swagger/favicon-32x32.png HTTP/1.1[0m" 304 -

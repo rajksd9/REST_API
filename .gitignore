@@ -1,0 +1,4 @@
+.venv/
+flask_venv/
+.pytest_cache
+*__pycache__

@@ -1,0 +1,490 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Access API",
+      "version": "1.0.0"
+    },
+  
+
+
+    "paths": {
+      "/": {
+        "get": {
+          "description": "Returns a message saying the backend server is running",
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "Backend Server Running Successfully."
+            }
+          }
+        }
+      },
+      "/customer": {
+        "get": {
+          "description": "Returns the list of customers available in the database or the details of a specific customer based on the customer ID.",
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "customer_id",
+              "in": "query",
+              "description": "Customer ID to retrieve specific customer details",
+              "required": false,
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Customer List or Customer Details"
+            },
+            "400": {
+              "description": "Customer ID is required"
+            },
+            "404": {
+              "description": "Failed to fetch the data."
+            }
+          }
+        }
+      },
+      "/customer/createCustomer": {
+        "post": {
+          "description": "This endpoint is used to create a customer and will return the created customer in response if successful.",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "Create Customer",
+              "in": "body",
+              "description": "JSON data for the API",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/CreateCustomer"
+              }
+            }
+          ],
+          "responses": {
+            "201": {
+              "description": "Customer successfully created."
+            },
+            "404": {
+              "description": "Failed to create customer."
+            }
+          }
+        }
+      },
+      "/customer/updateCustomer": {
+        "put": {
+          "description": "This endpoint is used to update an existing customer's details.",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "customer_id",
+              "in": "query",
+              "description": "Customer ID of the customer to update",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "Update Customer",
+              "in": "body",
+              "description": "JSON data for updating the customer",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/CreateCustomer"
+              }
+            }
+          ],
+          "responses": {
+            "202": {
+              "description": "Customer updated successfully."
+            },
+            "400": {
+              "description": "Customer ID is required."
+            },
+            "404": {
+              "description": "Customer not found."
+            },
+            "500": {
+              "description": "Failed to update customer."
+            }
+          }
+        }
+      },
+      "/orders": {
+        "get": {
+          "description": "Returns the list of all orders.",
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "Order List"
+            },
+            "404": {
+              "description": "Failed to fetch the data."
+            }
+          }
+        }
+      },
+      "/orders/createOrder": {
+        "post": {
+          "description": "This endpoint is used to create an order and will return the created order in response if successful.",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "Create Order",
+              "in": "body",
+              "description": "JSON data for the API",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/CreateOrder"
+              }
+            }
+          ],
+          "responses": {
+            "201": {
+              "description": "Order successfully created."
+            },
+            "404": {
+              "description": "Failed to create order."
+            }
+          }
+        }
+      },
+      "/orders/updateOrder": {
+        "put": {
+          "description": "This endpoint is used to update an existing order's details.",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "order_id",
+              "in": "query",
+              "description": "Order ID of the order to update",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "Update Order",
+              "in": "body",
+              "description": "JSON data for updating the order",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/CreateOrder"
+              }
+            }
+          ],
+          "responses": {
+            "202": {
+              "description": "Order updated successfully."
+            },
+            "400": {
+              "description": "Order ID is required."
+            },
+            "404": {
+              "description": "Order not found."
+            },
+            "500": {
+              "description": "Failed to update order."
+            }
+          }
+        }
+      },
+      "/orders/getCustomerOrders": {
+        "post": {
+          "description": "This endpoint is used to retrieve the order history of a specific customer.",
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "customer_id",
+              "in": "query",
+              "description": "Customer ID to retrieve order history",
+              "required": true,
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Customer Order History"
+            },
+            "404": {
+              "description": "Failed to fetch orders for the given customer ID."
+            },
+            "500": {
+              "description": "Server error while fetching customer orders."
+            }
+          }
+        }
+      },
+      "/products": {
+        "get": {
+          "description": "Returns the list of all products available.",
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "Product List"
+            },
+            "404": {
+              "description": "Failed to fetch the data."
+            }
+          }
+        }
+      },
+      "/products/createProduct": {
+        "post": {
+          "description": "This endpoint is used to create a product and will return the created product in response if successful.",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "Create Product",
+              "in": "body",
+              "description": "JSON data for the API",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/CreateProduct"
+              }
+            }
+          ],
+          "responses": {
+            "201": {
+              "description": "Product successfully created."
+            },
+            "404": {
+              "description": "Failed to create product."
+            }
+          }
+        }
+      },
+      "/products/updateProduct": {
+        "put": {
+          "description": "This endpoint is used to update an existing product's details.",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "product_id",
+              "in": "query",
+              "description": "Product ID of the product to update",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "Update Product",
+              "in": "body",
+              "description": "JSON data for updating the product",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/CreateProduct"
+              }
+            }
+          ],
+          "responses": {
+            "202": {
+              "description": "Product updated successfully."
+            },
+            "400": {
+              "description": "Product ID is required."
+            },
+            "404": {
+              "description": "Product not found."
+            },
+            "500": {
+              "description": "Failed to update product."
+            }
+          }
+        }
+      }
+    },
+"definitions": {
+  "CreateCustomer": {
+    "type": "object",
+    "properties": {
+      "customer_id": {
+        "type": "string",
+        "example": "00069"
+      },
+      "company_name": {
+        "type": "string",
+        "example": "Acme Corp"
+      },
+      "contact_name": {
+        "type": "string",
+        "example": "Raj Ksd"
+      },
+      "contact_title": {
+        "type": "string",
+        "example": "SDE"
+      },
+      "address": {
+        "type": "string",
+        "example": "Jain Campus"
+      },
+      "city": {
+        "type": "string",
+        "example": "Bengaluru"
+      },
+      "region": {
+        "type": "string",
+        "example": "Karnataka"
+      },
+      "postal_code": {
+        "type": "string",
+        "example": "562112"
+      },
+      "country": {
+        "type": "string",
+        "example": "India"
+      },
+      "phone": {
+        "type": "string",
+        "example": "123-456-7890"
+      }
+    },
+    "required": ["customer_id", "company_name", "contact_name"]
+  },
+  "CreateOrder": {
+    "type": "object",
+    "properties": {
+      "order_id": {
+        "type": "string",
+        "example": "12345"
+      },
+      "customer_id": {
+        "type": "string",
+        "example": "00069"
+      },
+      "employee_id": {
+        "type": "string",
+        "example": "emp001"
+      },
+      "order_date": {
+        "type": "string",
+        "example": "2024-09-01"
+      },
+      "required_date": {
+        "type": "string",
+        "example": "2024-09-15"
+      },
+      "shipped_date": {
+        "type": "string",
+        "example": "2024-09-10"
+      },
+      "ship_via": {
+        "type": "string",
+        "example": "FedEx"
+      },
+      "freight": {
+        "type": "number",
+        "example": 100.50
+      },
+      "ship_name": {
+        "type": "string",
+        "example": "Acme Corp"
+      },
+      "ship_address": {
+        "type": "string",
+        "example": "Jain Campus"
+      },
+      "ship_city": {
+        "type": "string",
+        "example": "Bengaluru"
+      },
+      "ship_region": {
+        "type": "string",
+        "example": "Karnataka"
+      },
+      "ship_postal_code": {
+        "type": "string",
+        "example": "562112"
+      },
+      "ship_country": {
+        "type": "string",
+        "example": "India"
+      }
+    },
+    "required": ["order_id", "customer_id", "order_date"]
+  },
+  "CreateProduct": {
+    "type": "object",
+    "properties": {
+      "product_id": {
+        "type": "string",
+        "example": "prod001"
+      },
+      "product_name": {
+        "type": "string",
+        "example": "Laptop"
+      },
+      "supplier_id": {
+        "type": "string",
+        "example": "supp001"
+      },
+      "category_id": {
+        "type": "string",
+        "example": "cat001"
+      },
+      "quantity_per_unit": {
+        "type": "string",
+        "example": "1 unit"
+      },
+      "unit_price": {
+        "type": "number",
+        "example": 1500.00
+      },
+      "units_in_stock": {
+        "type": "integer",
+        "example": 50
+      },
+      "units_on_order": {
+        "type": "integer",
+        "example": 10
+      },
+      "reorder_level": {
+        "type": "integer",
+        "example": 5
+      },
+      "discontinued": {
+        "type": "boolean",
+        "example": false
+      }
+    },
+    "required": ["product_id", "product_name", "supplier_id", "unit_price"]
+  }
+}
+
+  }
+  
